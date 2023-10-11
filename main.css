@@ -1,0 +1,86 @@
+body, html {
+    height: 100%
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+
+.bg-image {
+    /* The image used */
+    background-image: url('portfolio_main.jpeg');
+  
+    /* Add the blur effect */
+    filter: brightness(30%);
+    
+  
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: #383838;
+  }
+
+
+  /* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  right: -10%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Adjust the size of Greetings! */
+#Greetings {
+    font-size: 28px; /* Adjust the size as desired */
+}
+
+#headerText {
+    font-size: 45px;
+}
+
+
+#job_hunting{
+    font-size: 18px;
+}
+
+
+.typing::after {
+    content: "|";
+    animation: blink-caret 1s infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0;
+    }
+}
+
+.profile-picture {
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    transform: translate(0, -50%);
+    width: 200px; /* Adjust the size of the profile picture */
+    height: 200px; /* Adjust the size of the profile picture */
+    border-radius: 50%;
+    background-image: url('profile_picture.jpg'); /* Replace with your actual profile picture */
+    background-size: cover;
+  }
+
